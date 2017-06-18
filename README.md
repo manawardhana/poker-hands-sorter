@@ -21,10 +21,14 @@ $cat poker-hands.txt | lein run
 ### Bugs
 Currently it produces the following output against the test data file provided
 
+```
 Player 1: 256
 Player 2: 244 
+```
 
 After fixing the high-card logic it should be:
 
+```
 Player 1: 263
 Player 2: 237
+```

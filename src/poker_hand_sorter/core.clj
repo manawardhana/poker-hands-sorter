@@ -34,7 +34,6 @@
         zipped-vals (filter #(not= (first %) (second %)) (map list a-vals b-vals))
         last-pair (last zipped-vals)]
      (if (> (first last-pair) (second last-pair)) :h1 :h2))) 
-      
 
 (defn pair? [c]
   (let [b (map get-value c)]
@@ -113,5 +112,5 @@
   (let [results (atom [])]
     (doseq [line (line-seq (java.io.BufferedReader. *in*))] 
         (swap! results conj (process line)))
-        (println (str "Player 01:" ((frequencies @results) :h1) " Hands"))
-        (println (str "Player 02:" ((frequencies @results) :h2) " Hands"))))
+        (println (str "Player 1: " ((frequencies @results) :h1)))
+        (println (str "Player 2: " ((frequencies @results) :h2)))))

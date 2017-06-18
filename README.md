@@ -1,36 +1,30 @@
 # poker-hand-sorter
 
-FIXME: description
+Documentation
+
+## Prerequisites
+- Oracle JDK 1.8.0
+- Leiningen 2.7.1
 
 ## Installation
 
-Download from http://example.com/FIXME.
+- Clone this repository
 
 ## Usage
+- Change the current directory to the project directory
+- Run the following command in the linux shell
 
-FIXME: explanation
-
-    $ java -jar poker-hand-sorter-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
+```bash
+$cat poker-hands.txt | lein run
+```
 
 ### Bugs
+Currently it produces the following output against the test data file provided
 
-...
+Player 1: 256
+Player 2: 244 
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+After fixing the high-card logic it should be:
 
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Player 1: 263
+Player 2: 237

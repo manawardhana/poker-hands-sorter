@@ -1,6 +1,5 @@
 # poker-hand-sorter
 
-Documentation
 
 ## Prerequisites
 - Oracle JDK 1.8.0
